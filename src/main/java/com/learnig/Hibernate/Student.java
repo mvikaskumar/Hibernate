@@ -10,7 +10,7 @@ public class Student {
 	String name;
 	String address;
 	int contact;
-	
+
 	public Student(int id, String name, String address, int contact) {
 		super();
 		this.id = id;
@@ -59,5 +59,7 @@ public class Student {
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", address=" + address + ", contact=" + contact + "]";
 	}
+
+	
 	
 }
