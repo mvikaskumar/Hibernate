@@ -15,7 +15,7 @@ public class App
         System.out.println( "Hello World!" );
         
         Student st=new Student();
-        st.setId(101);
+        st.setId(106);
         st.setName("Vaibhav Arora");
         st.setAddress("Delhi");
         st.setContact(912333);
@@ -26,7 +26,8 @@ public class App
         //Usually SessionFactory is bean cofigure by the configration file named as hibernate.cfg.xml
          
 
-    Configuration cfg = new Configuration().configure("Hibernate.config.xml");
+    Configuration cfg = new Configuration();
+    cfg.configure("Hibernate.config.xml");
     SessionFactory factory = cfg.buildSessionFactory();
     
     //buildSessionFactory() build the sessionFactory for us

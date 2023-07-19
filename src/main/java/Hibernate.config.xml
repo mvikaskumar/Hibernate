@@ -8,12 +8,13 @@
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
     <!-- property name="connection.driver_class">com.mysql.jdbc.Driver</property -->
     <property name="connection.url">jdbc:mysql://localhost/myhiber</property>
-    <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
     <property name="connection.username">root</property>
     <property name="connection.password">12345</property>
-    <property name="show_sql">true</property>
-    <property name="format_sql">true</property>
     <property name="hbm2ddl.auto">update</property>
+    <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+    <property name="show_sql">true</property>
+    <!-- if we run without giving mapping then it will throw error"Exception in thread "main" org.hibernate.MappingException: Unknown entity: com.learnig.Hibernate.Student" -->
     <!-- mapping class="com.mcnz.jpa.examples.Player" / -->
+    <mapping class="com.learnig.Hibernate.Student" />
   </session-factory>
 </hibernate-configuration>
